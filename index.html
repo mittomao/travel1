@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
@@ -16,8 +20,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./asset/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./asset/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="asset/coin-slider-styles.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/respon.css">
+    
 </head>
   <body>
     <div class="app-main">
@@ -55,7 +62,7 @@
                 <div class="container">
                     <div class="menu-top__header">
                         <a href="index.html" class="logo-menu">
-                            <img src="img/logo.png" alt="">
+                            <img src="img/logo5.png" alt="">
                         </a>
                         <div class="dt-menu-toggle" id="toggleMenu">
                             Menu
@@ -64,13 +71,13 @@
                         <nav class="nav-menu nav-menu-mb" id="menuMobile">
                             <ul>
                                 <li>
-                                    <a href="#" class="active">
+                                    <a href="index.html" class="active">
                                         <i class="fa fa-home" aria-hidden="true"></i>
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="hotels.html">
                                         <i class="fa fa-coffee" aria-hidden="true"></i>
                                         HOTELS
                                     </a>
@@ -259,7 +266,7 @@
         
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="garely.html">
                                         <i class="fa fa-camera" aria-hidden="true"></i>
                                         GALLERY
                                     </a>
@@ -649,7 +656,18 @@
             </div>
             <div class="header">
                 <div class="header__slide">
-                    <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/10/bai-truoc-vung-tau-ve-dem.jpg" alt="">
+                    <!-- <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/10/bai-truoc-vung-tau-ve-dem.jpg" alt=""> -->
+                    <div id='coin-slider'>
+                        <a href="#" target="_blank">
+                            <img src='https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/10/bai-truoc-vung-tau-ve-dem.jpg' >
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src='./img/b2.jpg'>
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src='./img/b3.jpg' >
+                        </a>
+                    </div>
                 </div>
                 <div class="header__slogan">
                     <h1>A COMPLETE TRAVEL THEME</h1>
@@ -725,7 +743,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col col-12 col-md-5 col-lg-5 ml-auto">
+                                            <div class="col col-12 col-md-12 col-lg-5 ml-auto">
                                                 <div class="form-group">
                                                     <a href="#" class="button">Find Hotel</a>
                                                 </div>
@@ -853,6 +871,11 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#a4a3a5" fill-opacity="1" d="M0,96L40,122.7C80,149,160,203,240,208C320,213,400,171,480,133.3C560,96,640,64,720,90.7C800,117,880,203,960,213.3C1040,224,1120,160,1200,154.7C1280,149,1360,203,1400,229.3L1440,256L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+                </svg>                  
+            </div> -->
         </header>
         <main>
             <section class="tour-intro pd">
@@ -1461,22 +1484,52 @@
                                                 <h5>Why it is best?</h5>
                                                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, magnam cumque quia optio veniam, delectus praesentium minima vel maiores quis voluptatum debitis dolores ratione est quasi aperiam dolore repellat.</p>
                                                 <h5>Hotels to Stay</h5>
-                                                <div class="d-flex justify-content-between viewmap">
+                                                
+                                                <div class="d-flex justify-content-between viewInfo">
                                                     <a href="#">
-                                                        <i class="fa fa-venus" aria-hidden="true"></i>
-                                                        View on map
+                                                        <img src="./img/icon/f4.png" alt="">
+                                                        <span>Vé máy bay</span>
                                                     </a>
                                                     <div class="so-star">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span>(0 Ratings)
-                                                        </span>
+                                                       <span>
+                                                           Khứ hồi
+                                                       </span>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex justify-content-between viewmap">
+                                                <div class="d-flex justify-content-between viewInfo">
+                                                    <a href="#">
+                                                        <img src="./img/icon/f3.png" alt="">
+                                                        <span>Ô tô đưa đón</span>
+                                                    </a>
+                                                    <div class="so-star">
+                                                       <span>
+                                                           Đón tại sân bay
+                                                       </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between viewInfo">
+                                                    <a href="#">
+                                                        <img src="./img/icon/f2.png" alt="">
+                                                        <span>Khách sạn</span>
+                                                    </a>
+                                                    <div class="so-star">
+                                                       <span>
+                                                           Villa 5* 
+                                                       </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between viewInfo">
+                                                    <a href="#">
+                                                        <img src="./img/icon/f1.png" alt="">
+                                                        <span>Ăn uống</span>
+                                                    </a>
+                                                    <div class="so-star">
+                                                       <span>
+                                                          Bao gồm 2 bữa
+                                                       </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between viewInfo">
                                                     <a href="#">
                                                         <i class="fa fa-venus" aria-hidden="true"></i>
                                                         View on map
@@ -1532,22 +1585,52 @@
                                                 <h5>Why it is best?</h5>
                                                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, magnam cumque quia optio veniam, delectus praesentium minima vel maiores quis voluptatum debitis dolores ratione est quasi aperiam dolore repellat.</p>
                                                 <h5>Hotels to Stay</h5>
-                                                <div class="d-flex justify-content-between viewmap">
+                                                
+                                                <div class="d-flex justify-content-between viewInfo">
                                                     <a href="#">
-                                                        <i class="fa fa-venus" aria-hidden="true"></i>
-                                                        View on map
+                                                        <img src="./img/icon/f4.png" alt="">
+                                                        <span>Vé máy bay</span>
                                                     </a>
                                                     <div class="so-star">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span>(0 Ratings)
-                                                        </span>
+                                                       <span>
+                                                           Khứ hồi
+                                                       </span>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex justify-content-between viewmap">
+                                                <div class="d-flex justify-content-between viewInfo">
+                                                    <a href="#">
+                                                        <img src="./img/icon/f3.png" alt="">
+                                                        <span>Ô tô đưa đón</span>
+                                                    </a>
+                                                    <div class="so-star">
+                                                       <span>
+                                                           Đón tại sân bay
+                                                       </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between viewInfo">
+                                                    <a href="#">
+                                                        <img src="./img/icon/f2.png" alt="">
+                                                        <span>Khách sạn</span>
+                                                    </a>
+                                                    <div class="so-star">
+                                                       <span>
+                                                           Villa 5* 
+                                                       </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between viewInfo">
+                                                    <a href="#">
+                                                        <img src="./img/icon/f1.png" alt="">
+                                                        <span>Ăn uống</span>
+                                                    </a>
+                                                    <div class="so-star">
+                                                       <span>
+                                                          Bao gồm 2 bữa
+                                                       </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between viewInfo">
                                                     <a href="#">
                                                         <i class="fa fa-venus" aria-hidden="true"></i>
                                                         View on map
@@ -1603,93 +1686,52 @@
                                                 <h5>Why it is best?</h5>
                                                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, magnam cumque quia optio veniam, delectus praesentium minima vel maiores quis voluptatum debitis dolores ratione est quasi aperiam dolore repellat.</p>
                                                 <h5>Hotels to Stay</h5>
-                                                <div class="d-flex justify-content-between viewmap">
+                                               
+                                                <div class="d-flex justify-content-between viewInfo">
                                                     <a href="#">
-                                                        <i class="fa fa-venus" aria-hidden="true"></i>
-                                                        View on map
+                                                        <img src="./img/icon/f4.png" alt="">
+                                                        <span>Vé máy bay</span>
                                                     </a>
                                                     <div class="so-star">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span>(0 Ratings)
-                                                        </span>
+                                                       <span>
+                                                           Khứ hồi
+                                                       </span>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex justify-content-between viewmap">
+                                                <div class="d-flex justify-content-between viewInfo">
                                                     <a href="#">
-                                                        <i class="fa fa-venus" aria-hidden="true"></i>
-                                                        View on map
+                                                        <img src="./img/icon/f3.png" alt="">
+                                                        <span>Ô tô đưa đón</span>
                                                     </a>
                                                     <div class="so-star">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span>(0 Ratings)
-                                                        </span>
+                                                       <span>
+                                                           Đón tại sân bay
+                                                       </span>
                                                     </div>
                                                 </div>
-                                            </div>
-                                           <div class="mt-4">
-                                            <a href="#" class="button">Read More</a>
-                                           </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                           </div>
-                           <div class="item">
-                            <div class="beaches-item">
-                                <div class="row">
-                                    <div class="col col-12 col-md-6">
-                                        <div class="card_img">
-                                            <img src="./img/s4.jpg" alt="">
-                                            <div class="view">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col col-12 col-md-6">
-                                        <div class="list-rate">
-                                            <div class="rate-top">
-                                                <div>
-                                                    <a href="#">Fern Hill River</a>
-                                                    <span>Riverhead, NY</span>
-                                                </div>
-                                                <div class="so-star">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <span>(0 Ratings)
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="rate-body">
-                                                <h5>Why it is best?</h5>
-                                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem, magnam cumque quia optio veniam, delectus praesentium minima vel maiores quis voluptatum debitis dolores ratione est quasi aperiam dolore repellat.</p>
-                                                <h5>Hotels to Stay</h5>
-                                                <div class="d-flex justify-content-between viewmap">
+                                                <div class="d-flex justify-content-between viewInfo">
                                                     <a href="#">
-                                                        <i class="fa fa-venus" aria-hidden="true"></i>
-                                                        View on map
+                                                        <img src="./img/icon/f2.png" alt="">
+                                                        <span>Khách sạn</span>
                                                     </a>
                                                     <div class="so-star">
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                                        <span>(0 Ratings)
-                                                        </span>
+                                                       <span>
+                                                           Villa 5* 
+                                                       </span>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex justify-content-between viewmap">
+                                                <div class="d-flex justify-content-between viewInfo">
+                                                    <a href="#">
+                                                        <img src="./img/icon/f1.png" alt="">
+                                                        <span>Ăn uống</span>
+                                                    </a>
+                                                    <div class="so-star">
+                                                       <span>
+                                                          Bao gồm 2 bữa
+                                                       </span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between viewInfo">
                                                     <a href="#">
                                                         <i class="fa fa-venus" aria-hidden="true"></i>
                                                         View on map
@@ -1713,6 +1755,7 @@
                                 </div>
                             </div>
                            </div>
+
                        </div>
                    </div>
                 </div>
@@ -1879,29 +1922,53 @@
                                     </div>
                                     <ul class="type-rate">
                                         <li>
-                                            <span>1 <i class="fa fa-star star-small" aria-hidden="true"></i></span>
+                                            <span class="star">
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                            </span>
                                             <span class="dash"></span>
-                                            <span>0 đánh giá</span>
+                                            <span class="number">55%</span>
                                         </li>
                                         <li>
-                                            <span>2 <i class="fa fa-star star-small" aria-hidden="true"></i></span>
+                                            <span class="star">
+                                                
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                            </span>
                                             <span class="dash"></span>
-                                            <span>0 đánh giá</span>
+                                            <span class="number">55%</span>
                                         </li>
                                         <li>
-                                            <span>3 <i class="fa fa-star star-small" aria-hidden="true"></i></span>
+                                            <span class="star">
+                                              
+                                                 <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                 <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                 <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                            </span>
                                             <span class="dash"></span>
-                                            <span>0 đánh giá</span>
+                                            <span class="number">55%</span>
                                         </li>
                                         <li>
-                                            <span>4 <i class="fa fa-star star-small" aria-hidden="true"></i></span>
+                                            <span class="star">
+                                                
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                            </span>
                                             <span class="dash"></span>
-                                            <span>0 đánh giá</span>
+                                            <span class="number">55%</span>
                                         </li>
                                         <li>
-                                            <span>5 <i class="fa fa-star star-small" aria-hidden="true"></i></span>
+                                            <span class="star">
+                                               
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                                <i class="fa fa-star star-small" aria-hidden="true"></i>
+                                            </span>
                                             <span class="dash"></span>
-                                            <span>0 đánh giá</span>
+                                            <span class="number">55%</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -1939,7 +2006,7 @@
                     <div class="row">
                         <div class="col col-12 col-md-3">
                             <div class="col-logo">
-                                <img src="./img/footer-logo1.png" alt="">
+                                <img src="./img/logo5.png" alt="">
                                 <p class="text mt-3">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                                 <div class="list-icon">
                                     <a href="#">
@@ -2063,25 +2130,25 @@
                     <div class="row">
                         <div class="col col-6 col-md-3">
                             <div class="contact-item">
-                                <h4><i class="fa fa-phone" aria-hidden="true"></i> Phone</h4>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
                                 <p>0337217711</p>
                             </div>
                         </div>
                         <div class="col col-6 col-md-3">
                             <div class="contact-item">
-                                <h4><i class="fa fa-envelope" aria-hidden="true"></i>Email</h4>
+                                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                                 <p>wainii1998@gmail.com</p>
                             </div>
                         </div>
                         <div class="col col-6 col-md-3">
                             <div class="contact-item">
-                                <h4><i class="fa fa-address-book" aria-hidden="true"></i> Address</h4>
+                                <a href="#"><i class="fa fa-address-book" aria-hidden="true"></i> </a>
                                 <p>Thanh Mai, Thanh Oai, Hà Nội</p>
                             </div>
                         </div>
                         <div class="col col-6 col-md-3">
                             <div class="contact-item">
-                                <h4><i class="fa fa-cog" aria-hidden="true"></i> Other</h4>
+                                <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
                                 <p>Công Ty IIT</p>
                             </div>
                         </div>
@@ -2095,8 +2162,17 @@
         <div class="backtop">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
         </div>
-        <div class="gophone">
-            <i class="fa fa-phone" aria-hidden="true"></i>
+        <div class="phone-call1" style="position: fixed;bottom: 15px;left: 15px;">
+            <a href="tel:094.716.2779" style="text-decoration: none;">
+                <div class="d-flex">
+                    <div class="phone-img">
+                        <img src="http://westernskylinehotel.com/Content/img/callred.png" alt="">
+                    </div>
+                    <div class="phone">
+                        <span>094.716.2779</span>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="goMXH">
             <div class="toggleMXH">
@@ -2116,12 +2192,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="asset/owl-carousel/owl.carousel.min.js"></script>
+    <script src="asset/coin-slider.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/index.js"></script>
 
     <script>
         
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#coin-slider').coinslider({ width: "100%", height:"100vh" ,  navigation: true, delay: 2000 });
+        });
     </script>
 </body>
 </html>

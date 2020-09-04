@@ -28,6 +28,22 @@ tab1s.forEach((tab,i)=>{
      })
 });
 
+// Hotel
+
+const tab2 = document.querySelectorAll("#hotelList .tab-main-hotel a");
+const content2 = document.querySelectorAll("#hotelList .tab_content-hotels .tab_item");
+
+tab2.forEach((tab,i)=>{
+    tab.addEventListener("click",function (e) { 
+        e.preventDefault();
+        removeActive(tab2);
+        removeActive(content2);
+        this.classList.add("active");
+        const dataId = tab.dataset.id;
+        document.querySelector(`#${dataId}`).classList.add("active");   
+     })
+});
+
 
 
 

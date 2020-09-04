@@ -100,10 +100,14 @@ ul {
   display: flex;
   align-items: center;
   position: relative;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 .menu-top .logo-menu {
   margin-right: auto;
+}
+.menu-top .logo-menu img{
+  width: 120px;
+  object-fit: cover;
 }
 .menu-top nav {
   margin-left: auto;
@@ -272,9 +276,10 @@ ul {
 }
 .header__slide img {
   width: 100%;
-
+  height: 100vh;
   object-fit: cover;
 }
+
 .header__content {
   position: absolute;
   bottom: 20px;
@@ -367,6 +372,7 @@ a.button {
   text-align: center;
   transition: 0.4s;
   border-radius: 5px;
+  font-family: 'Pangolin', cursive;
 }
 
 a.button:hover {
@@ -431,7 +437,7 @@ a.button:hover {
 }
 
 .tour-intro{
-
+ 
 }
 .wrapcard{
   width: 100%;
@@ -518,6 +524,7 @@ a.button:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
+    
 }
 .card_body a.title1{
   display: block;
@@ -747,7 +754,9 @@ a.btn_card{
 
 /* Feed Back */
 .feedback{
-  background:#F6F6F6;
+  background: url(./../img/b2.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .feedback__body{
   margin-top: 30px;
@@ -763,6 +772,7 @@ a.btn_card{
 }
 .feedback__item p.text1{
   font-size:16px;
+  color: #fff;
   font-style: italic;
 }
 
@@ -771,7 +781,7 @@ a.btn_card{
     text-align: right;
 }
 .feedback__item .author span{
-  color: #000;
+  color: #fff;
   font-weight: bold;
   border-bottom: 1px solid;
 }
@@ -902,6 +912,7 @@ a.btn_card{
   cursor: pointer;
 }
 .utilities__left .list-item h5.active{
+  color: #3AE374;
   border-bottom: 2px solid #3AE374;
 }
 
@@ -910,6 +921,7 @@ a.btn_card{
 }
 .utilities__left .list-item h5.active i.fa{
   transform:rotate(90deg);
+  color: #3AE374;
 }
 
 .utilities__left .list-item .content{
@@ -985,6 +997,9 @@ a.btn_card{
 }
  .so-star span{
   display: block;
+  font-size:16px;
+  color: #0c2461;
+  font-weight: 600;
 }
 .rate-body{
   padding: 20px 0;
@@ -997,15 +1012,19 @@ a.btn_card{
   color: #0c2461;
   font-weight: 600;
 }
-.rate-body .viewmap{
+.rate-body .viewInfo{
   margin-bottom: 10px;
 }
-.rate-body .viewmap a{
+.rate-body .viewInfo a{
   color: #0c2461;
   font-size: 16px;
 }
-.rate-body .viewmap a i.fa{
-  margin-right: 15px;
+.rate-body .viewInfo a img{
+  width: 20px;
+  display: inline-block;
+}
+.rate-body .viewInfo a span{
+  padding-left: 5px;
 }
 .rate-body:before{
   content: '';
@@ -1107,6 +1126,13 @@ footer{
 .footer{
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+}
+.col-logo{
+  width: 100%;
+}
+.col-logo img{
+  width: 100%;
+  object-fit: cover;
 }
 .list-icon{
   display: flex;
@@ -1254,20 +1280,114 @@ footer{
   opacity: 1;
 }
 
-.gophone{
-  position: fixed;
-  bottom: 15px;
-  left: 15px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(46, 61, 218, 0.75);
-  border-radius: 50%;
-  animation:scaleB 2s linear infinite;
-  z-index: 1000;
+/* Phone Call */
+.phone-call1 {
+    position: fixed !important;
+    bottom: 15px;
+    left: 15px;
 }
+.phone-call1 a{
+	text-decoration: none;
+}
+/* .d-flex{
+	display: flex;
+	align-items: center;
+} */
+.phone-img{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 50%;
+	z-index:2;
+	animation: skewIn 1s ease-in-out infinite;
+
+}
+.phone-img:hover{
+	background : #fff;
+}
+
+/* .phone-img:hover + .phone::before{
+	width: 100%;
+	
+} */
+.phone-img::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	background: transparent;
+	border: 1px solid red;
+  border-radius:50%;
+  animation: scaleCricle 1.2s linear infinite;
+}
+
+.phone-img img{
+	width: 100%;
+	object-fit: cover;
+}
+.phone-call1  .phone{
+	padding: 8px 30px 8px 50px;
+	box-shadow: 0 0 5px #ddd;
+	margin-left: -30px;
+	border-radius: 15px;
+  border:1px solid #ddd;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.phone-call1  .phone::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	transition: .4s;
+	z-index:-1;
+  border-radius: 15px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background : #0D73BC;
+  animation : animateP 2s linear infinite;
+}
+
+.phone-call1 .phone span{
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+@keyframes skewIn{
+	0%{
+		transform: rotate(-15deg);
+	}
+	50%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(15deg);
+	}
+}
+@keyframes scaleCricle{
+	0%{
+		transform: scale(1.15);
+	}
+	100%{
+		transform: scale(1.45);
+	}
+}
+
+@keyframes animateP{
+	0%{
+	  width: 0;
+	}
+	100%{
+    width: 100%;
+
+	}
+}
+/* End Phone */
 .backtop i.fa{
   color: #fff;
   font-size: 20px;
@@ -1332,17 +1452,34 @@ ul.type-rate{
 ul.type-rate li{
   list-style: none;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 ul.type-rate li span{
   color: #949494;
 }
+ul.type-rate li span.star{
+  
+  white-space: nowrap;
+  width: 50%;
+}
 
 ul.type-rate li .dash{
     display: inline-block;
-    width:100px;
-    height: 3px;
+    width:200px;
+    height: 10px;
     background: #cecccc;
-    margin: 0 5px 3px 5px;
+    position: relative;
+}
+ul.type-rate li .dash::before{
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background: #6DC82B;
+}
+ul.type-rate li .number{
+  padding-left: 5px;
 }
 
 i.fa.star-small{
@@ -1393,7 +1530,7 @@ a.button1{
 
 .toggleMXH{
   position: absolute;
-  top: 0;
+  top: 1px;
   left: -50px;
   width: 50px;
   height: 50px;
@@ -1405,14 +1542,13 @@ a.button1{
   border-bottom-left-radius: 50%; */
 }
 .toggleMXH i.fa{
-  font-size:18px;
-
+  font-size:24px;
   transition: .5s;
   color: peru;
 }
 
 .goMXH.active .toggleMXH i.fa{
-    color: lime;
+    transform: rotate(180deg);
 }
 
 .listMXH{
@@ -1435,6 +1571,53 @@ a.button1{
   color: #fff;
 }
 
+
+/* Path Header */
+.path{
+   width: 100%;
+    background: #eee;
+}
+.box-path{
+  display: flex;
+  align-items: center;
+  width:100%;
+  padding: 20px 0;
+  
+}
+.box-path h3{
+  margin-left: auto;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 26px;
+  color: #6DC82B;
+  font-family: 'Noto Serif', serif;
+
+}
+.box-path a{
+ text-decoration: none;
+ font-size: 16px;
+ color: #333;
+ padding-right: 10px;
+ margin-right: 10px;
+ position: relative;
+ font-family: 'Noto Serif', serif;
+
+}
+.box-path a:not(:last-child):before{
+  content:'';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform:translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background: #bbb;
+}
+
+.box-path a span.a{
+  color: red;
+  font-size: 18px;;
+}
 
 /* End rate-product */
 

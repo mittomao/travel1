@@ -157,7 +157,7 @@
 
         .header__content {
            
-           bottom: -100%;
+           /* bottom: -100%; */
            
         }
         .header .tab-contents {        
