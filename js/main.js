@@ -109,7 +109,7 @@ $(function () {
  $(function () { 
      $.each($(".nav-menu >  ul >  li >  a"), function (i, item) { 
           $(item).on("click",function (e) { 
-              e.preventDefault();
+            //   e.preventDefault();
               $(this).next().toggleClass("active");
            });
      });
