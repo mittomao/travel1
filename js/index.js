@@ -19,4 +19,10 @@ $(function () {
     $(".toggleMXH").on("click",function(){
         $(".goMXH").toggleClass("active");
     });
+    $("#toggleBooking").on("click",function(e){
+        e.preventDefault();
+        $("#formBooking").slideToggle();
+    });
+
+   
 });
