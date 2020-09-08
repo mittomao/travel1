@@ -54,6 +54,7 @@
      /* Menu Mobile */
      .menu-top__header {
         display: block;
+        padding-bottom: 10px;
     }
 
     /* REspone MegaMenu */

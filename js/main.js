@@ -74,6 +74,11 @@ const box = document.querySelector(".box-search");
 openSearch.addEventListener("click",function () { 
     box.classList.add("active");
 });
+box.addEventListener("click",function (e) { 
+    if(e.target.classList.contains("active")){
+        this.classList.remove("active");
+    }
+});
 closeSearch.addEventListener("click",function () { 
     box.classList.remove("active");
 });

@@ -700,7 +700,7 @@ a.button:hover {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(255,255,255,.3);
+  background: rgba(255,255,255,.8);
   transition: .5s;
   z-index: 10000;
   display: flex;
@@ -710,16 +710,19 @@ a.button:hover {
 .box-search.active{
   top: 0%;
 }
-
+.box-search.active input{
+  width: 100%;
+}
 .box-search input{
- width: 100%;
+ width: 0%;
  padding: 0 ;
  padding: 50px 120px;
  background: rgba(0, 0, 0, .75);
  border: none;
  outline: none;
  color: #fff;
- font-size:18px;
+ font-size:24px;
+ transition: all 1s ease;
 }
 .box-search i.fa-search{
   position: absolute;
@@ -1584,6 +1587,10 @@ footer{
   font-size: 18px;
   font-weight: 600;
 }
+.thankyou a{
+  color: #f368e0;
+}
+
 
 
 
