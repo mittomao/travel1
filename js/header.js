@@ -12,59 +12,59 @@ $(function () {
       const nextBtn = document.querySelector("#nextGlide");
       const glideSlides = document.querySelectorAll(".glide__slide");
       const lineIndexs = document.querySelectorAll(".index");
-      const background = document.querySelector(".background");
+      const background = document.querySelector(".background img");
 
       const listBg = ["b5.jpg","b2.jpg","b6.jpg","b7.jpg","b8.jpg"];
 
-      const myAnimation1 = new hoverEffect({
-        parent: document.querySelector('.background'),
-        intencity : 0.9,
-        image1: `img/Banner/${listBg[0]}`,
-        image2: `img/Banner/${listBg[1]}`,
-        displacementImage: 'img/Banner/b7.jpg',
-        hover : false
-      });
-      const myAnimation2 = new hoverEffect({
-        parent: document.querySelector('.background'),
-        intencity : 0.9,
-        image1: `img/Banner/${listBg[1]}`,
-        image2: `img/Banner/${listBg[2]}`,
-        displacementImage: 'img/Banner/b7.jpg',
-        hover : false
-      });
-      const myAnimation3 = new hoverEffect({
-        parent: document.querySelector('.background'),
-        intencity : 0.9,
-        image1: `img/Banner/${listBg[2]}`,
-        image2: `img/Banner/${listBg[3]}`,
-        displacementImage: 'img/Banner/b7.jpg',
-        hover : false
-      });
-      const myAnimation4 = new hoverEffect({
-        parent: document.querySelector('.background'),
-        intencity : 0.9,
-        image1: `img/Banner/${listBg[3]}`,
-        image2: `img/Banner/${listBg[4]}`,
-        displacementImage: 'img/Banner/b7.jpg',
-        hover : false
-      });
-      const myAnimation5 = new hoverEffect({
-        parent: document.querySelector('.background'),
-        intencity : 0.9,
-        image1: `img/Banner/${listBg[4]}`,
-        image2: `img/Banner/${listBg[0]}`,
-        displacementImage: 'img/Banner/b7.jpg',
-        hover : false
-      });
+      // const myAnimation1 = new hoverEffect({
+      //   parent: document.querySelector('.background'),
+      //   intencity : 0.9,
+      //   image1: `img/Banner/${listBg[0]}`,
+      //   image2: `img/Banner/${listBg[1]}`,
+      //   displacementImage: 'img/Banner/b7.jpg',
+      //   hover : false
+      // });
+      // const myAnimation2 = new hoverEffect({
+      //   parent: document.querySelector('.background'),
+      //   intencity : 0.9,
+      //   image1: `img/Banner/${listBg[1]}`,
+      //   image2: `img/Banner/${listBg[2]}`,
+      //   displacementImage: 'img/Banner/b7.jpg',
+      //   hover : false
+      // });
+      // const myAnimation3 = new hoverEffect({
+      //   parent: document.querySelector('.background'),
+      //   intencity : 0.9,
+      //   image1: `img/Banner/${listBg[2]}`,
+      //   image2: `img/Banner/${listBg[3]}`,
+      //   displacementImage: 'img/Banner/b7.jpg',
+      //   hover : false
+      // });
+      // const myAnimation4 = new hoverEffect({
+      //   parent: document.querySelector('.background'),
+      //   intencity : 0.9,
+      //   image1: `img/Banner/${listBg[3]}`,
+      //   image2: `img/Banner/${listBg[4]}`,
+      //   displacementImage: 'img/Banner/b7.jpg',
+      //   hover : false
+      // });
+      // const myAnimation5 = new hoverEffect({
+      //   parent: document.querySelector('.background'),
+      //   intencity : 0.9,
+      //   image1: `img/Banner/${listBg[4]}`,
+      //   image2: `img/Banner/${listBg[0]}`,
+      //   displacementImage: 'img/Banner/b7.jpg',
+      //   hover : false
+      // });
 
 
-      const displayBg = [
-        myAnimation1,
-        myAnimation2,
-        myAnimation3,
-        myAnimation4,
-        myAnimation5
-      ];
+      // const displayBg = [
+      //   myAnimation1,
+      //   myAnimation2,
+      //   myAnimation3,
+      //   myAnimation4,
+      //   myAnimation5
+      // ];
 
       prevBtn.addEventListener("click",handlePrev);
       nextBtn.addEventListener("click",handleNext);
@@ -80,13 +80,16 @@ $(function () {
         }
         lineIndexs[currentIndex].classList.add("active");
         showTitle("prev");
-        displayBg[currentIndex].next();
-        setTimeout(() => {
-          let canvas = background.querySelectorAll("canvas");
-          background.insertBefore(canvas[canvas.length-1] , background.firstChild);
-          displayBg[currentIndex].previous();
-      }, 1000);
-        // displayBg
+
+        background.setAttribute("src",`img/Banner/${listBg[currentIndex]}`);
+
+        // displayBg[currentIndex].next();
+      //   setTimeout(() => {
+      //     let canvas = background.querySelectorAll("canvas");
+      //     background.insertBefore(canvas[canvas.length-1] , background.firstChild);
+      //     displayBg[currentIndex].previous();
+      // }, 1000);
+       
       }
 
       function handleNext() { 
@@ -95,13 +98,16 @@ $(function () {
         currentIndex = (currentIndex + 1) % lineIndexs.length;
         lineIndexs[currentIndex].classList.add("active");
         showTitle("next");
-        // console.log(prevIndex);
-        displayBg[prevIndex].next();
-        setTimeout(() => {
-            let canvas = background.querySelectorAll("canvas");
-            background.appendChild(canvas[0]);
-            displayBg[prevIndex].previous();
-        }, 1200);
+
+        background.setAttribute("src",`img/Banner/${listBg[currentIndex]}`);
+
+
+        // displayBg[prevIndex].next();
+        // setTimeout(() => {
+        //     let canvas = background.querySelectorAll("canvas");
+        //     background.appendChild(canvas[0]);
+        //     displayBg[prevIndex].previous();
+        // }, 1200);
       }
       function removeActive(tabs) {
         tabs.forEach(tab => {

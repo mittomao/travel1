@@ -504,6 +504,13 @@ ul {
     height: 100%;
     z-index: -1;
 }
+
+.background img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation : flash 1s ease;
+}
 .background:before{
     content: '';
     position: absolute;
@@ -754,7 +761,9 @@ a.button:hover {
 .wrapcard{
   width: 100%;
   border: 1px solid #eceeeb;
-  transition:.5s;
+  transition: .5s;
+  perspective: 500px;
+  margin-top: calc(15px * var(--i));
 }
 .wrapcard:hover{
   box-shadow: 0 0 5px #eaece8;
@@ -775,12 +784,39 @@ a.button:hover {
 }
 .card_img{
   width: 100%;
+  height: 250px;
   position: relative;
+  transform-style: preserve-3d;
+  transition:transform .5s;
 }
+
+.card_img:hover .card_img__1{
+  transform: rotateY(-180deg);
+}
+
+
+.card_img__1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform.5s;
+  overflow: hidden;
+
+}
+.card_img__2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: rotateY(180deg);
+  transition: transform .6s;
+}
+
 .card_img1 img{
   height: 200px;
 }
-
+/* 
 .card_img::after{
     content: "";
     position: absolute;
@@ -791,7 +827,7 @@ a.button:hover {
     background-image : linear-gradient(to bottom, transparent , transparent,#dbd7d7);
     opacity: 0;
     transition: all .5s ease;
-  }
+  } */
 
 .card_img img{
   width: 100%;
